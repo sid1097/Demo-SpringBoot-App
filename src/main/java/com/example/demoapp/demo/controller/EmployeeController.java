@@ -53,7 +53,7 @@ public class EmployeeController implements Serializable{
 		int status = empService.addEmployee(emp);
 		
 		if(status==1)
-			return new ResponseEntity<Object>("Record Added Successfully", HttpStatus.CREATED);
+			return new ResponseEntity<Object>("Record Added Successfully.", HttpStatus.CREATED);
 		else
 			return new ResponseEntity<Object>("Internal Error Occured", HttpStatus.BAD_REQUEST);
 		
